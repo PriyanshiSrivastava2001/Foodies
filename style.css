@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 59px;
+}
+
+
+#logo{
+   margin: 3px 52px; 
+}
+
+#logo img{
+    width: 91px;
+    height: 60px;
+    margin: -3px -45px; 
+    }
+
+#navbar{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+    
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
+
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#navbar ul li a{
+   color: #873838;
+   display: block;
+   padding: 3px 21px;
+   border-radius: 20px;
+   text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+    color: rgb(2, 12, 27);
+    background-color: rgb(211, 178, 129);
+ }
+
+ #home{
+     display: flex;
+     flex-direction: column;
+     padding: 43px 200px;
+     height: 434px;
+     justify-content: center;
+     align-items: center;
+    
+
+ }
+
+ #home::before{
+    content: " ";
+    background: url('Images/header.png') no-repeat center center/cover;
+    height: 592px;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#home h1{
+    color: #4b1b09;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#home p{
+    color: #391609;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: normal;
+    font-family: 'Bree Serif', serif;
+
+}
+#services{
+    margin: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 61px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('Images/food2.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('Images/contact us.png') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+footer{
+    background: #631919;
+    color: #dea2a2;
+    padding: 9px 20px;
+}
+
+
+.h-primary{
+    font-size: 3.5rem;
+    padding: 8px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    padding: 14px;
+    color: brown;
+}
+
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+
+.center{
+    text-align: center;
+}
